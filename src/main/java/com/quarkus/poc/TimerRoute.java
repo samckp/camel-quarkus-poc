@@ -8,7 +8,7 @@ public class TimerRoute extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-        from("timer:timerRoute?period=1000")
+        from("{{route}}")
                 .log("this is Quarkus Route !!");
     }
 }
